@@ -1,0 +1,15 @@
+﻿<Application x:Class="NavigationWPF01.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:NavigationWPF01"
+             xmlns:viewModel="clr-namespace:NavigationWPF01.MVVM.ViewModel"
+             xmlns:view="clr-namespace:NavigationWPF01.MVVM.View">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type TypeName=viewModel:HomeViewModel}">
+            <view:HomeView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type TypeName=viewModel:SettingsViewModel}">
+            <view:SettingsView/>
+        </DataTemplate>
+    </Application.Resources>
+</Application>
